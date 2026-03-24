@@ -17,17 +17,11 @@
  * - En Nginx, se requiere configurar 'try_files' en el bloque del servidor.
  */
 
-?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Unico punto de acceso a la aplicacion</h1>
-</body>
-</html>
+
+require_once __DIR__ . '/../autoload.php';
+require_once __DIR__ . '/../routes/web.php';
+
+echo '<br>';
+echo 'Hola desde el index.php';
